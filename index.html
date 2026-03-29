@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio — Computer Science undergraduate, full-stack developer, ML enthusiast." />
+  <title>Niranjan S | CS Undergraduate & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__ring"></div>
+      <div class="loader__bar"></div>
+      <p class="loader__text">Initializing</p>
+    </div>
+  </div>
+  <div id="starfield" aria-hidden="true" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -2; pointer-events: none;"></div>
+
+  <div class="bg-grid" id="parallaxGrid" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo" data-nav>NS</a>
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#hero" class="nav__link" data-nav>Home</a></li>
+        <li><a href="#about" class="nav__link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav__link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav__link" data-nav>Projects</a></li>
+        <li><a href="#certifications" class="nav__link" data-nav>Certifications</a></li>
+        <li><a href="#resume" class="nav__link" data-nav>Resume</a></li>
+        <li><a href="#contact" class="nav__link" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+        <div class="hero__vignette"></div>
+      </div>
+      <div class="hero__content container" id="heroContent">
+        <p class="hero__eyebrow">Hello, I'm</p>
+        <h1 class="hero__name">Niranjan S</h1>
+        <p class="hero__role-line">CS Undergraduate | Full Stack Developer | ML Enthusiast</p>
+        <p class="hero__role" aria-live="polite">
+          <span class="hero__typing-line">
+            <span class="hero__role-prefix">Focus:&nbsp;</span>
+            <span class="hero__typing" id="typingText"></span><span class="hero__cursor" id="typingCursor"
+              aria-hidden="true"></span>
+          </span>
+        </p>
+        <p class="hero__tagline">Building scalable, user-friendly software with clean architecture and modern tooling.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--outline">Contact Me</a>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section__title reveal">About Me</h2>
+        <p class="section__subtitle reveal">Professional summary</p>
+        <div class="about__grid">
+          <div class="about__visual reveal reveal--left">
+            <div class="about__frame glass tilt-hover" data-tilt data-tilt-max="8" data-tilt-speed="600"
+              data-tilt-glare="true" data-tilt-max-glare="0.2">
+              <img src="E:\portfolio\Niranjan. s.jpg" alt="Niranjan S" width="320" height="320" loading="lazy"
+                onerror="this.onerror=null;this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=Niranjan&backgroundColor=1a1a1a';" />
+            </div>
+          </div>
+          <div class="about__text reveal reveal--right">
+            <p>
+              I am a Computer Science undergraduate passionate about building scalable, user-friendly applications. I
+              enjoy transforming complex problems into simple, efficient solutions using clean architecture and modern
+              technologies.
+            </p>
+            <p>
+              My interests include full-stack development, mobile applications, and applied machine learning. I actively
+              participate in hackathons and open-source projects, focusing on performance, developer experience, and
+              real-world impact.
+            </p>
+            <p>
+              I am currently exploring system design and modern AI tools, and I am seeking internship opportunities
+              where I can contribute, learn, and grow with a strong engineering team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal">Skills</h2>
+        <p class="section__subtitle reveal">Stack &amp; tools — interactive tiles</p>
+
+        <div class="skills__categories">
+          <article class="skill-card glass tilt-hover reveal" data-tilt data-tilt-max="12" data-tilt-scale="1.02">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 7h16M4 12h10M4 17h16" />
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Programming</h3>
+            <ul class="skill-tags skill-tags--grid">
+              <li>Python</li>
+              <li>Java</li>
+              <li>Dart</li>
+              <li>C++</li>
+              <li>ML</li>
+            </ul>
+          </article>
+          <article class="skill-card glass tilt-hover reveal" data-tilt data-tilt-max="12" data-tilt-scale="1.02">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="4" width="18" height="14" rx="2" />
+                <path d="M7 20h10" />
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Web</h3>
+            <ul class="skill-tags skill-tags--grid">
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+          <article class="skill-card glass tilt-hover reveal" data-tilt data-tilt-max="12" data-tilt-scale="1.02">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="6" y="2" width="12" height="20" rx="2" />
+                <path d="M10 18h4" />
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Mobile</h3>
+            <ul class="skill-tags skill-tags--grid">
+              <li>Flutter</li>
+              <li>React Native</li>
+            </ul>
+          </article>
+          <article class="skill-card glass tilt-hover reveal" data-tilt data-tilt-max="12" data-tilt-scale="1.02">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2" />
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Tools</h3>
+            <ul class="skill-tags skill-tags--grid">
+              <li>Firebase</li>
+              <li>Supabase</li>
+              <li>Git</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal">Featured Projects</h2>
+        <p class="section__subtitle reveal">Check out some of my featured projects below.</p>
+        <div class="projects__grid">
+
+          <article class="project-card glass project-card--float reveal reveal--zoom" data-tilt data-tilt-max="14"
+            data-tilt-glare="true" data-tilt-max-glare="0.18">
+            <div class="project-card__glow"></div>
+            <div class="project-card__inner">
+              <h3 class="project-card__title">Weather App</h3>
+              <p class="project-card__desc">
+                A mobile application that provides real-time weather updates for any location worldwide.
+              </p>
+              <p class="project-card__meta"><strong>Stack:</strong> Flutter,Dart, Firebase</p>
+              <p class="project-card__meta"><strong>Role:</strong> Mobile App Developer</p>
+              <div class="project-card__actions">
+                <a href="https://github.com/niranjansvsaro/weather.git" class="btn btn--small btn--primary"
+                  target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass project-card--float reveal reveal--zoom" data-tilt data-tilt-max="14"
+            data-tilt-glare="true" data-tilt-max-glare="0.18" style="--float-delay: 0.2s">
+            <div class="project-card__glow"></div>
+            <div class="project-card__inner">
+              <h3 class="project-card__title">SMVEC Result</h3>
+              <p class="project-card__desc">
+                A web application that provides download results for the students of smvec.
+              </p>
+              <p class="project-card__meta"><strong>Stack:</strong> Python, Flask</p>
+              <p class="project-card__meta"><strong>Role:</strong> Web Developer</p>
+              <div class="project-card__actions">
+                <a href="https://github.com/niranjansvsaro/smvec_result.git" class="btn btn--small btn--primary"
+                  target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass project-card--float reveal reveal--zoom" data-tilt data-tilt-max="14"
+            data-tilt-glare="true" data-tilt-max-glare="0.18" style="--float-delay: 0.4s">
+            <div class="project-card__glow"></div>
+            <div class="project-card__inner">
+              <h3 class="project-card__title">Birthday Agent</h3>
+              <p class="project-card__desc">
+                A web application that sends birthday wishes to the students.
+              </p>
+              <p class="project-card__meta"><strong>Stack:</strong> Python, Flask, HTML, CSS, JavaScript</p>
+              <p class="project-card__meta"><strong>Role:</strong> Web Developer</p>
+              <div class="project-card__actions">
+                <a href="https://github.com/niranjansvsaro/BITTHDAY-AGENT-EMAIL.git" class="btn btn--small btn--primary"
+                  target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section certifications" id="certifications">
+      <div class="container">
+        <h2 class="section__title reveal">Certifications</h2>
+        <p class="section__subtitle reveal">Professional credentials — add yours below</p>
+
+        <!--
+          HOW TO ADD A CERTIFICATION:
+          Copy one full <article class="skill-card ..."> block and paste below the previous one.
+          Edit: title, tags (issuer, grade, date), and "View Certificate" link (or remove the <a> block). -->
+        <div class="certifications__grid">
+          <article class="skill-card glass tilt-hover reveal" data-tilt data-tilt-max="12" data-tilt-scale="1.02">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7" />
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Al-ML Virtual Internship</h3>
+             <p class="project-card__desc">
+                Google Developers via EduSkills
+              </p>
+            <ul class="skill-tags skill-tags--grid" style="display: none;">
+              <!-- Tags hidden as requested --> 
+            </ul>
+            <div style="margin-top: 0.5rem">
+              <a href="E:\portfolio\Certification\AI-ML Virtual Internship AICTE.jpeg"
+                class="btn btn--small btn--outline btn--full cert-list__link" style="gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+          <article class="skill-card glass tilt-hover reveal" data-tilt data-tilt-max="12" data-tilt-scale="1.02" style="transition-delay: 0.15s">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7" />
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Data Engineering Virtual Internship</h3>
+             <p class="project-card__desc">
+                AWS Academy via EduSkills
+              </p>
+            <ul class="skill-tags skill-tags--grid" style="display: none;">
+              <!-- Tags hidden as requested -->
+            </ul>
+            <div style="margin-top: 0.5rem">
+              <a href="E:\portfolio\Certification\Data Engineering Virtual Internship AICTE.jpg" class="btn btn--small btn--outline btn--full cert-list__link" style="gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                View Certificate
+              </a>
+            </div>
+          </article>
+ 
+
+              <article class="skill-card glass tilt-hover reveal" data-tilt data-tilt-max="12" data-tilt-scale="1.02" style="transition-delay: 0.15s">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7" />
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Google AI-ML</h3>
+             <p class="project-card__desc">
+                EduSkills TECH CAMP: Google AI-ML
+              </p>
+            <ul class="skill-tags skill-tags--grid" style="display: none;">
+              <!-- Tags hidden as requested -->
+            </ul>
+            <div style="margin-top: 0.5rem">
+              <a href="E:\portfolio\Certification\Data Engineering Virtual Internship AICTE.jpg" class="btn btn--small btn--outline btn--full cert-list__link" style="gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+              <article class="skill-card glass tilt-hover reveal" data-tilt data-tilt-max="12" data-tilt-scale="1.02" style="transition-delay: 0.15s">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7" />
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Machine Learning Foundations</h3>
+             <p class="project-card__desc">
+                AWS Academy Graduate - Machine Learning Foundations
+              </p>
+            <ul class="skill-tags skill-tags--grid" style="display: none;">
+              <!-- Tags hidden as requested -->
+            </ul>
+            <div style="margin-top: 0.5rem">
+              <a href="E:\portfolio\Certification\AWS ML .jpeg" class="btn btn--small btn--outline btn--full cert-list__link" style="gap: 8px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                View Certificate
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section resume-block" id="resume">
+      <div class="container reveal">
+        <h2 class="section__title">Resume</h2>
+        <p class="section__subtitle">Download my experience &amp; projects as PDF</p>
+        <p class="resume-block__note">Place your file as <code>resume.pdf</code> in the project folder.</p>
+        <a href="resume.pdf" class="btn btn--primary btn--large btn--glow" download="Niranjan_S_Resume.pdf">Download
+          Resume (PDF)</a>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal">Contact</h2>
+        <p class="section__subtitle reveal">Internships, collaborations, or a quick hello</p>
+        <div class="contact__grid">
+          <div class="contact__links reveal reveal--left">
+            <p>Prefer email or socials — I respond within a few days.</p>
+            <div class="social-row">
+              <a href="mailto:niranjansvsaro@gmail.com" class="social-link social-link--icon" aria-label="Email">
+                <span class="social-link__icon-wrap">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </span>
+                <span>niranjansvsaro@gmail.com</span>
+              </a>
+              <a href="https://www.linkedin.com/in/niranjan-s-7a6b6b359" class="social-link social-link--icon"
+                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <span class="social-link__icon-wrap">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/niranjansvsaro" class="social-link social-link--icon" target="_blank"
+                rel="noopener noreferrer" aria-label="GitHub">
+                <span class="social-link__icon-wrap">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+          <form class="contact__form glass reveal reveal--right" id="contactForm" novalidate>
+            <label class="form-field">
+              <span>Name</span>
+              <input type="text" name="name" id="contactName" required placeholder="Your name" autocomplete="name" />
+            </label>
+            <label class="form-field">
+              <span>Email</span>
+              <input type="email" name="email" id="contactEmail" required placeholder="you@gmail.com"
+                autocomplete="email" />
+            </label>
+            <label class="form-field">
+              <span>Message</span>
+              <textarea name="message" id="contactMessage" rows="5" required placeholder="Your message..."></textarea>
+            </label>
+            <button type="submit" class="btn btn--primary btn--full">Send message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__social">
+        <a href="https://github.com/niranjansvsaro" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/niranjan-s-7a6b6b359" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:niranjansvsaro@gmail.com" aria-label="Email">Email</a>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> Niranjan S. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal for Certifications -->
+  <div class="modal" id="certModal" aria-hidden="true">
+    <div class="modal__overlay" id="certModalOverlay"></div>
+    <button class="modal__close" id="certModalClose" aria-label="Close modal">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12" />
+      </svg>
+      CLOSE
+    </button>
+    <div class="modal__content">
+      <img src="" id="certModalImage" alt="Certification">
+      <p class="modal__instruction">CLICK ANYWHERE TO EXIT</p>
+    </div>
+  </div>
+
+  <!-- Three.js removed in favor of 2D Thunder Canvas -->
+  <script src="js/starfield.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
